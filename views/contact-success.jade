@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    div(class='contact-success') 
+        div(class='overlay')
+            div(class='success-content')
+                h1(class='title') Your Message has been successfully received !!
+                h1(class='title') We will you reply after max 48 hours !!
+                    h2 
+                        | User Name: 
+                        span #{data.name}
+                    h2 
+                        | Email: 
+                        span #{data.email}
+                    h2 
+                        | Message:
+                        span #{data.message}

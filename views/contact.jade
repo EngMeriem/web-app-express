@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    div(id='contact') 
+        div(class='overlay')
+            div(class='contact-content')
+                h1(class='title') Contact Us
+                div.border
+                form.contact-form(action='/contact', method="post")
+                    input.contact-form-text(type="text",name='name', placeholder="Your Name")
+                    input.contact-form-text(type="email",name='email', placeholder="Your email")
+                    textarea.contact-form-text(name='message', placeholder="Your message")
+                    input(class='btn', type="submit", value="Send")
